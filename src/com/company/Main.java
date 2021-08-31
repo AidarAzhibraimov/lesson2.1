@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.print("Прогулка ");
         System.out.print(stroll(generateRandomAge(), -9));
+
         System.out.println(" " + generateRandomAge()+ "");
     }
 
