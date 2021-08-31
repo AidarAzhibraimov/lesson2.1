@@ -1,10 +1,13 @@
 package com.company;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
         System.out.print("Прогулка ");
-        System.out.print(stroll(51, -9));
+        System.out.print(stroll(generateRandomAge(), -9));
+        System.out.println(" " + generateRandomAge()+ "");
     }
 
     public static String stroll(int ageOfPerson, int temperature) {
@@ -20,6 +23,7 @@ public class Main {
     }
 
     public static int generateRandomAge() {
-        return 20;
+        Random random = new Random();
+        return random.nextInt(100);
     }
 }
